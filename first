@@ -1,0 +1,30 @@
+name = input('coloque o seu nome: ' )
+print(f' oi {name} ' )
+idade = int (input('informe sua idade ' ))
+if int (idade <= 17 ):
+  print('não autorizado')
+else: print(f'Bem vindo {name} ' )
+
+email = input('digite o seu email: ' )
+print(f'confirme email: {email} ')
+senha = input('informe sua senha: ' )
+
+moradia = input('aonde voce mora?')
+sobre = input('fale um pouco sobre voce:') 
+
+acao = (input('Gostaria de ver videos,fotos, ou fazer uma publicação: \n ' ))
+
+if (acao == 'videos'):
+  print('Aqui esta alguns videos que voce pode gosta ')
+elif (acao == 'fotos' ):
+  print('veja algumas fotos')
+else: print('Gostaria de fazer uma publicação?')
+premium = input('gostaria de se torna premium sim/nao: ')
+if premium == 'sim':
+  nmr = int (input('informe o numero do seu cartão:' ))
+  print('parabens voce se tornou um assinante')
+  opc = input('gostaria de conhecer os seus beneficios? S/N:')         
+  if opc != 'n':
+    print('Os seus beneficios são acesso a conteudos exclusivos, anuncios desativados e muito mais ')
+  else:print('aproveite')
+else: print('agradecemos o seu tempo')
